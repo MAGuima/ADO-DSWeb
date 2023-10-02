@@ -1,0 +1,21 @@
+/* 
+    Created on : 26 de ago de 2023, 15:59:00
+    Author     : Marcelo Guimarães
+*/
+body{
+    background-color: black;
+    width: auto;
+    height: auto;
+}
+.containerLampada{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.button1{
+    background-color: black;
+    width: auto;
+    height: auto;
+    position: absolute;
+    margin-top: 600px;
+}

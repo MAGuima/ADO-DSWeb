@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <link th:href="@{../index.css}" rel="stylesheet" type="text/css">
+    <link href="../index.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="../index.css">
+    <title>ADO1 - Currículo em Spring MVC</title>
+
+</head>
+
+<body>
+<h1>ADO1 - Currículo em Spring MVC</h1>
+<section class="container-principal">
+    <div class="div-principal">
+        <img class="img-polaroid" src="../img/polaroid.png" alt="fotografia tipo polaroid"/>
+        <img class="img-folder" src="../img/folder.png" alt="imagem de uma pasta de arquivo"/>
+        <img class="img-top-secret" src="../img/top-secret.png" alt="carimbo de Top Secret"/>
+        <h1 th:text="${nome}">Nome</h1>
+        <p th:text="${dados}">Dados Pessoais</p>
+        <p th:text="${email}">E-mail</p>
+        <p th:text="${celular}">Celular</p>
+    </div>
+</section>
+
+<section class="container-2">
+    <div class="div-menu">
+        <img src="../img/post1.png" alt=""/>
+        <img src="../img/post2.png" alt=""/>
+        <img src="../img/post3.png" alt=""/>
+        <img src="../img/post4.png" alt=""/>
+    </div>
+    <div class="div-bloco">
+        <img class="img-bloco" src="../img/bloco.png" alt=""/>
+        <div>
+            <h2>Apresentação</h2>
+            <p th:text="${apresentacao}">Apresentação</p>
+        </div>
+
+    </div>
+    <div>
+        <img class="img-lapis" src="../img/lapis.png" height="600" alt=""/>
+    </div>
+</section>
+
+<section class="container-3">
+    <div class="div-prancheta1">
+        <img class="img-prancheta" src="../img/prancheta.png" alt=""/>
+        <div>
+            <h2>Formação</h2>
+            <p th:text="${formacao1}">Formação 1</p>
+            <p th:text="${formacao2}">Formação 2</p>
+            <p th:text="${formacaoextra}">Formação extra</p>
+        </div>
+        <div>
+            <h2>Histórico profissional</h2>
+            <p class="historico" th:text="${historico1}">Histórico profissional 1</p>
+            <p class="historico" th:text="${historico2}">Histórico profissional 2</p>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>
